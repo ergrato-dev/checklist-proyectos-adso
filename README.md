@@ -16,6 +16,9 @@ Instrumento de evaluación estandarizado para las sesiones de seguimiento de pro
 
 ---
 
+> [!NOTE]
+> Este es un **documento de trabajo en construcción permanente**. Los criterios, escalas, stack de tecnologías y todas las decisiones aquí documentadas se revisan y mejoran con cada ciclo formativo. Las contribuciones de instructores, equipo pedagógico y comunidad son bienvenidas — ver [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Tabla de contenidos
 
 - [¿Por qué existe este instrumento?](#por-qué-existe-este-instrumento)
@@ -42,11 +45,14 @@ Sin un instrumento común, cada instructor evalúa con criterios distintos: ineq
 
 ## Referentes metodológicos
 
-Cada ítem de cada lista está anclado simultáneamente a tres referentes. Ver desarrollo completo en [1.justificación-metodologica.md](1.justificación-metodologica.md).
+Toda la información de este instrumento está anclada explícitamente a **cuatro documentos oficiales del programa**. Ver desarrollo completo en [1.justificación-metodologica.md](1.justificación-metodologica.md).
 
 1. **Programa de Formación ADSO (228118):** competencias y RAP por trimestre.
-2. **Proyecto Formativo:** fases del ciclo de vida del software y entregables esperados.
-3. **Estándares de la industria:** IEEE, ISO/IEC 25010, CMMI, Scrum/Kanban.
+2. **Proyecto Formativo ADSO:** fases del ciclo de vida del software y entregables esperados.
+3. **Planeación Pedagógica Vigente — Oferta Abierta:** secuencia de contenidos para grupos de siete trimestres.
+4. **Planeación Pedagógica Vigente — Cadena de Formación:** secuencia para grupos que articulan desde la media técnica.
+
+Los estándares de la industria (IEEE, ISO/IEC 25010, CMMI, Scrum/Kanban) complementan los anteriores como referencia técnica externa.
 
 Cada ítem fue diseñado con cuatro criterios de viabilidad: **verificable**, **alcanzable**, **progresivo** y **orientado a evidencia**.
 
