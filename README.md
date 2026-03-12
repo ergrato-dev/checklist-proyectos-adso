@@ -146,7 +146,11 @@ checklist-proyectos-adso/
 ├── 5.lineas-rojas-ideas-de-proyecto.md    ← dominios restringidos y por qué
 │
 ├── _assets/
-│   └── banner.svg
+│   ├── banner.svg
+│   └── progresion-trimestral.svg          ← diagrama de progresión OA y CF
+│
+├── .vscode/
+│   └── settings.json                      ← configuración local del editor
 │
 ├── docs/
 │   ├── listas-oferta-abierta/             ← OA: grupos que inician en T1
@@ -178,8 +182,8 @@ checklist-proyectos-adso/
 
 ### Oferta Abierta (OA) — 7 trimestres
 
-| Trimestre | Naturaleza de la sesión                     | Archivo                                                                               |
-| --------- | ------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Trimestre | Naturaleza de la sesión                     | Archivo                                                                              |
+| --------- | ------------------------------------------- | ------------------------------------------------------------------------------------ |
 | T1        | Aprobación de ideas de proyecto             | [1t-lista-de-chequeo-oa.md](docs/listas-oferta-abierta/t1/1t-lista-de-chequeo-oa.md) |
 | T2        | Seguimiento técnico — análisis y diseño     | [2t-lista-de-chequeo-oa.md](docs/listas-oferta-abierta/t2/2t-lista-de-chequeo-oa.md) |
 | T3        | Seguimiento técnico — construcción inicial  | [3t-lista-de-chequeo-oa.md](docs/listas-oferta-abierta/t3/3t-lista-de-chequeo-oa.md) |
@@ -190,8 +194,8 @@ checklist-proyectos-adso/
 
 ### Cadena de Formación (CF) — 4 trimestres ADSO
 
-| Trimestre ADSO      | Equivalencia OA     | Archivo                                                                                            |
-| ------------------- | ------------------- | -------------------------------------------------------------------------------------------------- |
+| Trimestre ADSO      | Equivalencia OA     | Archivo                                                                                           |
+| ------------------- | ------------------- | ------------------------------------------------------------------------------------------------- |
 | T4 (1.° ADSO en CF) | Agrupa T1–T3 OA     | [1t-lista-de-chequeo-cf.md](docs/listas-cadena-formacion/t4%20-%202t3t/1t-lista-de-chequeo-cf.md) |
 | T5 (2.° ADSO en CF) | Equivale a T4–T5 OA | [2t-lista-de-chequeo-cf.md](docs/listas-cadena-formacion/t5%20-%204t5t/2t-lista-de-chequeo-cf.md) |
 | T6 (3.° ADSO en CF) | Equivale a T6 OA    | [3t-lista-de-chequeo-cf.md](docs/listas-cadena-formacion/t6/3t-lista-de-chequeo-cf.md)            |
