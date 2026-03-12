@@ -12,7 +12,7 @@ body:
     id: archivo
     attributes:
       label: Archivo afectado
-      placeholder: _docs/...
+      placeholder: _listas-de-chequeo/...
     validations:
       required: true
 

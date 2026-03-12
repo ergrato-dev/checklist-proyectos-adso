@@ -12,8 +12,8 @@ body:
     id: archivo
     attributes:
       label: Archivo afectado
-      description: Ruta relativa del archivo, ej. `_docs/listas-oferta-abierta/t1/1t-lista-de-chequeo-oa.md`
-      placeholder: _docs/...
+      description: Ruta relativa del archivo, ej. `_listas-de-chequeo/listas-oferta-abierta/t1/1t-lista-de-chequeo-oa.md`
+      placeholder: _listas-de-chequeo/...
     validations:
       required: true
 

@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Antes de solicitar, verifica en `_docs/` que la lista no exista ya.
+        Antes de solicitar, verifica en `_listas-de-chequeo/` que la lista no exista ya.
 
   - type: dropdown
     id: trimestre
