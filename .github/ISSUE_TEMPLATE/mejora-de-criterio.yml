@@ -1,0 +1,55 @@
+name: "✨ Mejora de criterio o ítem"
+description: Propón una mejora a un ítem existente para que sea más claro, verificable o progresivo.
+title: "[MEJORA] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Una buena mejora hace el criterio más **verificable**, más **alcanzable** en el trimestre o mejor **alineado** con los estándares de la industria.
+
+  - type: input
+    id: archivo
+    attributes:
+      label: Archivo afectado
+      placeholder: _docs/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Texto actual del ítem
+      description: Copia el ítem tal como está hoy.
+    validations:
+      required: true
+
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Texto propuesto
+      description: Escribe cómo debería quedar el ítem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: justificacion
+    attributes:
+      label: Justificación pedagógica
+      description: ¿Por qué es mejor la propuesta? ¿Qué problema resuelve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dimension
+    attributes:
+      label: Dimensión afectada
+      options:
+        - "1 - Gestión del Proyecto"
+        - "2 - Artefactos Técnicos"
+        - "3 - Documentación"
+        - "4 - Trabajo en Equipo y Proceso"
+        - "5 - Calidad y Mejores Prácticas"
+        - "Varias / General"
+    validations:
+      required: true

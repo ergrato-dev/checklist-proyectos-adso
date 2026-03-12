@@ -1,0 +1,56 @@
+name: "📋 Nueva lista de chequeo"
+description: Solicita la creación de una lista para un trimestre o modalidad aún no cubierta.
+title: "[NUEVA LISTA] "
+labels: ["feat", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de solicitar, verifica en `_docs/` que la lista no exista ya.
+
+  - type: dropdown
+    id: trimestre
+    attributes:
+      label: Trimestre
+      options:
+        - T1
+        - T2
+        - T3
+        - T4
+        - T5
+        - T6
+        - T7
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modalidad
+    attributes:
+      label: Modalidad
+      options:
+        - Oferta Abierta
+        - Cadena de Formación
+    validations:
+      required: true
+
+  - type: textarea
+    id: rap
+    attributes:
+      label: RAP(s) del trimestre
+      description: Indica los Resultados de Aprendizaje que cubre este trimestre según el programa ADSO 228118.
+    validations:
+      required: true
+
+  - type: textarea
+    id: entregables
+    attributes:
+      label: Entregables esperados
+      description: ¿Qué artefactos técnicos y de documentación se esperan en este trimestre?
+    validations:
+      required: true
+
+  - type: textarea
+    id: diferencias
+    attributes:
+      label: Diferencias clave respecto a listas existentes
+      description: ¿Por qué no puede reutilizarse una lista de otro trimestre similar?

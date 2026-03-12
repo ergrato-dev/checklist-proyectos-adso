@@ -1,0 +1,51 @@
+name: "🐛 Error en una lista de chequeo"
+description: Reporta un criterio incorrecto, ambiguo o desactualizado en una lista existente.
+title: "[ERROR] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar el error. Completa la información para que podamos corregirlo rápidamente.
+
+  - type: input
+    id: archivo
+    attributes:
+      label: Archivo afectado
+      description: Ruta relativa del archivo, ej. `_docs/listas-oferta-abierta/t1/1t-lista-de-chequeo-oa.md`
+      placeholder: _docs/...
+    validations:
+      required: true
+
+  - type: input
+    id: item
+    attributes:
+      label: Ítem o sección con el error
+      description: Copia el texto exacto del ítem o nombra la sección.
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del error
+      description: ¿Qué está mal? ¿Es ambiguo, incorrecto, desactualizado?
+    validations:
+      required: true
+
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Corrección sugerida (opcional)
+      description: Si tienes una propuesta de texto corregido, escríbela aquí.
+
+  - type: dropdown
+    id: modalidad
+    attributes:
+      label: Modalidad afectada
+      options:
+        - Oferta Abierta
+        - Cadena de Formación
+        - Ambas
+    validations:
+      required: true

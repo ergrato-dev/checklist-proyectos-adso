@@ -1,5 +1,9 @@
 <img src="_assets/banner.svg" alt="Listas de Chequeo · ADSO 228118 · SENA" width="100%"/>
 
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-3fb950?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
+[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-58a6ff?style=flat-square)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-Contributor%20Covenant-8b949e?style=flat-square)](CODE_OF_CONDUCT.md)
+
 # Listas de Chequeo — Seguimiento de Proyectos ADSO
 
 Instrumento de evaluación estandarizado para las sesiones de seguimiento de proyectos formativos del programa **Análisis y Desarrollo de Software (ADSO, cód. 228118)** — SENA Regional Distrito Capital, Centro de Gestión de Mercados, Logística y Tecnologías de la Información.
