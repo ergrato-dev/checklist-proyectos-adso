@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="320" viewBox="0 0 1100 320">
+  <style>
+    text { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  </style>
+  <defs>
+    <pattern id="dp" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.7" fill="#161b22"/>
+    </pattern>
+  </defs>
+
+  <!-- BG -->
+  <rect width="1100" height="320" fill="#0d1117"/>
+  <rect width="1100" height="320" fill="url(#dp)"/>
+
+  <!-- Title -->
+  <text x="550" y="24" font-size="13.5" font-weight="700" fill="#e6edf3" text-anchor="middle">
+    Progresión de Sesiones de Seguimiento · ADSO 228118
+  </text>
+
+  <!-- Stage bars (y=34, h=6) -->
+  <rect x="30"  y="34" width="432" height="6" fill="#58a6ff" rx="3"/>
+  <rect x="486" y="34" width="432" height="6" fill="#d29922" rx="3"/>
+  <rect x="942" y="34" width="128" height="6" fill="#3fb950" rx="3"/>
+
+  <!-- Stage labels -->
+  <text x="246"  y="52" font-size="10" fill="#58a6ff" text-anchor="middle">Etapa 1 · Conceptualización y Diseño</text>
+  <text x="702"  y="52" font-size="10" fill="#d29922" text-anchor="middle">Etapa 2 · Construcción, Pruebas e Integración</text>
+  <text x="1006" y="52" font-size="10" fill="#3fb950" text-anchor="middle">Etapa 3 · Implantación</text>
+
+  <!-- ═══ OFERTA ABIERTA ═══ -->
+  <text x="30" y="70" font-size="10.5" font-weight="700" fill="#c9d1d9">OA — Oferta Abierta</text>
+
+  <!-- T1 -->
+  <rect x="30"  y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="31"  y="79" width="126" height="4"  fill="#58a6ff" rx="2"/>
+  <text x="94"  y="113" font-size="28" font-weight="800" fill="#58a6ff" text-anchor="middle">T1</text>
+  <text x="94"  y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Aprobación</text>
+  <text x="94"  y="145" font-size="9.5" fill="#8b949e" text-anchor="middle">de ideas</text>
+  <!-- → -->
+  <line x1="160" y1="122" x2="178" y2="122" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="178,118 182,122 178,126" fill="#30363d"/>
+
+  <!-- T2 -->
+  <rect x="182" y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="183" y="79" width="126" height="4"  fill="#58a6ff" rx="2"/>
+  <text x="246" y="113" font-size="28" font-weight="800" fill="#58a6ff" text-anchor="middle">T2</text>
+  <text x="246" y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Análisis</text>
+  <text x="246" y="145" font-size="9.5" fill="#8b949e" text-anchor="middle">y diseño</text>
+  <!-- → -->
+  <line x1="312" y1="122" x2="330" y2="122" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="330,118 334,122 330,126" fill="#30363d"/>
+
+  <!-- T3 -->
+  <rect x="334" y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="335" y="79" width="126" height="4"  fill="#58a6ff" rx="2"/>
+  <text x="398" y="113" font-size="28" font-weight="800" fill="#58a6ff" text-anchor="middle">T3</text>
+  <text x="398" y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Construcción</text>
+  <text x="398" y="145" font-size="9.5" fill="#8b949e" text-anchor="middle">inicial</text>
+  <!-- →  stage boundary -->
+  <line x1="464" y1="122" x2="482" y2="122" stroke="#484f58" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <polygon points="482,118 486,122 482,126" fill="#484f58"/>
+
+  <!-- T4 -->
+  <rect x="486" y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="487" y="79" width="126" height="4"  fill="#d29922" rx="2"/>
+  <text x="550" y="113" font-size="28" font-weight="800" fill="#d29922" text-anchor="middle">T4</text>
+  <text x="550" y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Construcción</text>
+  <text x="550" y="145" font-size="9.5" fill="#8b949e" text-anchor="middle">avanzada</text>
+  <!-- → -->
+  <line x1="616" y1="122" x2="634" y2="122" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="634,118 638,122 634,126" fill="#30363d"/>
+
+  <!-- T5 -->
+  <rect x="638" y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="639" y="79" width="126" height="4"  fill="#d29922" rx="2"/>
+  <text x="702" y="113" font-size="28" font-weight="800" fill="#d29922" text-anchor="middle">T5</text>
+  <text x="702" y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Pruebas</text>
+  <!-- → -->
+  <line x1="768" y1="122" x2="786" y2="122" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="786,118 790,122 786,126" fill="#30363d"/>
+
+  <!-- T6 -->
+  <rect x="790" y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="791" y="79" width="126" height="4"  fill="#d29922" rx="2"/>
+  <text x="854" y="113" font-size="28" font-weight="800" fill="#d29922" text-anchor="middle">T6</text>
+  <text x="854" y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Integración</text>
+  <!-- → stage boundary -->
+  <line x1="920" y1="122" x2="938" y2="122" stroke="#484f58" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <polygon points="938,118 942,122 938,126" fill="#484f58"/>
+
+  <!-- T7 -->
+  <rect x="942" y="78" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="943" y="79" width="126" height="4"  fill="#3fb950" rx="2"/>
+  <text x="1006" y="113" font-size="28" font-weight="800" fill="#3fb950" text-anchor="middle">T7</text>
+  <text x="1006" y="132" font-size="9.5" fill="#8b949e" text-anchor="middle">Implantación</text>
+  <text x="1006" y="145" font-size="9.5" fill="#8b949e" text-anchor="middle">y entrega</text>
+
+  <!-- ═══ CADENA DE FORMACIÓN ═══ -->
+  <text x="30" y="184" font-size="10.5" font-weight="700" fill="#c9d1d9">CF — Cadena de Formación</text>
+
+  <!-- Media técnica placeholder -->
+  <rect x="30"  y="192" width="432" height="88" fill="#0d1117" stroke="#21262d" stroke-width="1" stroke-dasharray="5,3" rx="4"/>
+  <text x="246" y="228" font-size="11.5" font-weight="600" fill="#484f58" text-anchor="middle">Articulación Media Técnica</text>
+  <text x="246" y="246" font-size="9"    fill="#3d444d"   text-anchor="middle">Aprendices ingresan con fundamentos equivalentes a T1–T3 OA</text>
+  <text x="246" y="261" font-size="9"    fill="#3d444d"   text-anchor="middle">(cursados durante la educación media técnica)</text>
+  <!-- → -->
+  <line x1="464" y1="236" x2="482" y2="236" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="482,232 486,236 482,240" fill="#30363d"/>
+
+  <!-- CF1 · T4 -->
+  <rect x="486" y="192" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="487" y="193" width="126" height="4"  fill="#d29922" rx="2"/>
+  <text x="550" y="215" font-size="12" font-weight="700" fill="#d29922" text-anchor="middle">1.° ADSO</text>
+  <text x="550" y="229" font-size="8.5" fill="#6e7681"  text-anchor="middle">T4 del programa</text>
+  <text x="550" y="245" font-size="9"   fill="#8b949e"  text-anchor="middle">Análisis · Diseño</text>
+  <text x="550" y="259" font-size="9"   fill="#8b949e"  text-anchor="middle">Constr. inicial</text>
+  <!-- → -->
+  <line x1="616" y1="236" x2="634" y2="236" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="634,232 638,236 634,240" fill="#30363d"/>
+
+  <!-- CF2 · T5 -->
+  <rect x="638" y="192" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="639" y="193" width="126" height="4"  fill="#d29922" rx="2"/>
+  <text x="702" y="215" font-size="12" font-weight="700" fill="#d29922" text-anchor="middle">2.° ADSO</text>
+  <text x="702" y="229" font-size="8.5" fill="#6e7681"  text-anchor="middle">T5 del programa</text>
+  <text x="702" y="245" font-size="9"   fill="#8b949e"  text-anchor="middle">Constr. avanzada</text>
+  <text x="702" y="259" font-size="9"   fill="#8b949e"  text-anchor="middle">y pruebas</text>
+  <!-- → -->
+  <line x1="768" y1="236" x2="786" y2="236" stroke="#30363d" stroke-width="1.5"/>
+  <polygon points="786,232 790,236 786,240" fill="#30363d"/>
+
+  <!-- CF3 · T6 -->
+  <rect x="790" y="192" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="791" y="193" width="126" height="4"  fill="#d29922" rx="2"/>
+  <text x="854" y="215" font-size="12" font-weight="700" fill="#d29922" text-anchor="middle">3.° ADSO</text>
+  <text x="854" y="229" font-size="8.5" fill="#6e7681"  text-anchor="middle">T6 del programa</text>
+  <text x="854" y="245" font-size="9"   fill="#8b949e"  text-anchor="middle">Integración</text>
+  <!-- → stage boundary -->
+  <line x1="920" y1="236" x2="938" y2="236" stroke="#484f58" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <polygon points="938,232 942,236 938,240" fill="#484f58"/>
+
+  <!-- CF4 · T7 -->
+  <rect x="942" y="192" width="128" height="88" fill="#161b22" stroke="#30363d" stroke-width="1" rx="4"/>
+  <rect x="943" y="193" width="126" height="4"  fill="#3fb950" rx="2"/>
+  <text x="1006" y="215" font-size="12" font-weight="700" fill="#3fb950" text-anchor="middle">4.° ADSO</text>
+  <text x="1006" y="229" font-size="8.5" fill="#6e7681"  text-anchor="middle">T7 del programa</text>
+  <text x="1006" y="245" font-size="9"   fill="#8b949e"  text-anchor="middle">Implantación</text>
+  <text x="1006" y="259" font-size="9"   fill="#8b949e"  text-anchor="middle">y entrega</text>
+
+  <!-- Foot note -->
+  <line x1="30" y1="294" x2="1070" y2="294" stroke="#21262d" stroke-width="1"/>
+  <text x="550" y="308" font-size="9" fill="#484f58" text-anchor="middle">
+    Línea discontinua = cambio de etapa · Las listas de chequeo están en _docs/ · Ponderaciones completas en 3.escala-valoración-propuesta.md
+  </text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="317" width="1100" height="3" fill="#3fb950"/>
+</svg>

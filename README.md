@@ -88,6 +88,8 @@ Ver contexto completo en [3.escala-valoración-propuesta.md](3.escala-valoració
 | Trabajo en Equipo           | 10%   | 10%   | 10% |
 | Calidad y Mejores Prácticas | 10%   | 15%   | 15% |
 
+<img src="_assets/progresion-trimestral.svg" alt="Diagrama de progresión trimestral OA y CF · ADSO 228118" width="100%"/>
+
 ---
 
 ## Líneas rojas — dominios no aprobables
