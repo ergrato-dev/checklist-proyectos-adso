@@ -4,6 +4,12 @@
 
 Instrumento de evaluación estandarizado para las sesiones de seguimiento de proyectos formativos del programa **Análisis y Desarrollo de Software (ADSO, cód. 228118)** — SENA Regional Distrito Capital, Centro de Gestión de Mercados, Logística y Tecnologías de la Información.
 
+<br>
+
+### 🏃 _"Entrena para un kilómetro. La carrera solo mide cien metros."_
+
+<br>
+
 ---
 
 ## Problema que resuelve

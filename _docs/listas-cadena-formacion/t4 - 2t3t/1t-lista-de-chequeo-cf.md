@@ -42,6 +42,17 @@
 | A.1 | El grupo tiene entre 3 y 5 integrantes. Se recomienda número impar para facilitar la toma de decisiones colectivas por mayoría simple. | | | |
 | A.2 | Cada integrante se presenta con nombre completo y puede identificar a todos sus compañeros de grupo por nombre. | | | |
 | A.3 | El grupo tiene un nombre de equipo y ha designado un vocero o líder para esta sesión. El rol puede rotar en trimestres siguientes. | | | |
+| A.4 | **El grupo tiene cinco integrantes (fuertemente recomendado en primer
+trimestre).** Grupos de tres son el mínimo aceptable solo cuando el número
+total de aprendices de la ficha no permite conformar grupos de cinco. El
+instructor debe registrar la justificación si aprueba un grupo de menos de
+cinco integrantes. *Nota pedagógica: un curso de 30 aprendices con grupos
+de cinco genera 6 equipos; con grupos de tres genera 10. La diferencia no
+es cosmética: con 6 equipos el instructor puede dar feedback profundo y
+personalizado en cada seguimiento; con 10 equipos el tiempo de atención
+por grupo se reduce a menos de la mitad, lo que deteriora directamente la
+calidad del proceso formativo. Forzar grupos de cinco en primer trimestre
+es, antes que una restricción, una decisión de calidad pedagógica.* | | | |
 
 ---
 
@@ -61,6 +72,10 @@
 | B.4 | El grupo menciona al menos un **software existente similar** y puede explicar en qué se diferenciaría su propuesta, así sea brevemente. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
 | B.5 | El alcance propuesto es **realizable por un equipo de 3 a 5 personas a lo largo del programa formativo**, sin depender de infraestructuras, presupuestos o tecnologías inalcanzables. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
 | B.6 | El dominio propuesto **no incurre en ninguna línea roja** definida en el Bloque C. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+
+
+*Nota: Para los instructores*
+*> No castrar las ideas de proyecto por alcance. Si se presentan proyectos ambiciosos, no restringirlos, sino orientar el alcance viable para el periodo de formación, de acuerdo con la experiencia y conocimiento de los jurados participantes*
 
 ---
 
