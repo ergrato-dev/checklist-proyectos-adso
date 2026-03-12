@@ -12,11 +12,11 @@
 > - Construcción del Software → RA 05: Realizar pruebas al software para verificar su funcionalidad — **resultado completo**
 >
 > **Módulos técnicos activos:**
-> - Asesoría de Desarrollo / Codificación con Flask — cierre definitivo del RA de Codificación, obligatorio (6 h/sem)
+> - Asesoría de Desarrollo / Codificación Backend — cierre definitivo del RA de Codificación, obligatorio (6 h/sem)
 > - Pruebas de Software — cierre del RA 05, obligatorio (6 h/sem)
 > - Fundamentos de Tecnologías Emergentes (Python - IoT con Tinkercad/Arduino) — **deseable, no obligatorio** (12 h/sem cuando se activa)
 >
-> **Propósito del trimestre:** T6 cierra la fase de construcción del sistema. Tiene dos hitos pedagógicos simultáneos e igualmente importantes: el equipo demuestra que puede construir un servicio REST con Flask (cuarto backend del programa, lo que consolida la competencia de codificación en múltiples tecnologías), y por primera vez en Oferta Abierta el equipo enfrenta el proceso formal de pruebas de software — plan de pruebas, casos de prueba, ejecución, registro de defectos y reporte. El módulo de IoT enriquece el proyecto si el equipo lo incorpora, pero el sistema es válido y completo sin él. La pregunta central de T6 es doble: **¿el sistema está completamente codificado con todos sus componentes integrados, y el equipo ha verificado su funcionamiento mediante un proceso de pruebas documentado y reproducible?**
+> **Propósito del trimestre:** T6 cierra la fase de construcción del sistema. Tiene dos hitos pedagógicos simultáneos e igualmente importantes: el equipo demuestra que puede construir un servicio REST adicional (cuarto backend del programa, lo que consolida la competencia de codificación en múltiples tecnologías), y por primera vez en Oferta Abierta el equipo enfrenta el proceso formal de pruebas de software — plan de pruebas, casos de prueba, ejecución, registro de defectos y reporte. El módulo de IoT enriquece el proyecto si el equipo lo incorpora, pero el sistema es válido y completo sin él. La pregunta central de T6 es doble: **¿el sistema está completamente codificado con todos sus componentes integrados, y el equipo ha verificado su funcionamiento mediante un proceso de pruebas documentado y reproducible?**
 
 ---
 
@@ -78,29 +78,29 @@
 
 ---
 
-## DIMENSIÓN 2 — Artefactos Técnicos: Flask e integración del sistema (35 % / 30 % con IoT)
+## DIMENSIÓN 2 — Artefactos Técnicos: Backend e integración del sistema (35 % / 30 % con IoT)
 
-### Bloque 2A — Backend REST con Python / Flask (RA 04 — resultado FINAL)
+### Bloque 2A — Backend REST: cuarto servicio funcional (RA 04 — resultado FINAL)
 
-> Flask es el cuarto backend del programa. A diferencia de los anteriores (Spring Boot, FastAPI, Express), Flask no tiene opiniones fuertes sobre cómo estructurar el proyecto: es un microframework que requiere que el equipo tome todas las decisiones arquitectónicas. Eso lo hace pedagógicamente valioso como cierre de la competencia de codificación: demuestra que el aprendiz puede construir una API bien estructurada incluso cuando el framework no lo obliga. El jurado debe evaluar no solo si el código funciona, sino si las decisiones de diseño del equipo son coherentes y justificadas.
+> El equipo elige la tecnología backend que mejor se alinee con su arquitectura. Este es el cuarto backend del programa, lo que consolida la competencia de codificación en múltiples tecnologías. El jurado debe evaluar no solo si el código funciona, sino si las decisiones de diseño del equipo son coherentes y justificadas.
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 2A.1 | El proyecto Flask **arranca sin errores** y el jurado puede verificarlo en el momento. La estructura del proyecto está organizada de manera explícita por el equipo (blueprints por dominio, carpeta de modelos, servicios, y configuración separada por ambiente). | | | | | |
-| 2A.2 | El equipo puede justificar **por qué existe este servicio Flask** en la arquitectura del sistema: qué responsabilidad específica tiene que no está cubierta por los backends anteriores (FastAPI, Spring Boot, Express). Las respuestas aceptables son arquitectónicamente coherentes; la respuesta "porque el módulo lo pedía" no es aceptable en el trimestre de cierre de la competencia. | | | | | |
-| 2A.3 | El proyecto usa **Flask-RESTful, Flask-RESTX o Blueprints** para organizar los endpoints en módulos por dominio. Hay al menos dos blueprints activos con sus rutas, y el archivo de entrada (`app.py` o equivalente) solo configura la aplicación sin contener lógica de negocio. | | | | | |
-| 2A.4 | La API Flask implementa **validación de datos de entrada** en las rutas de creación y actualización: se usa Marshmallow, Pydantic, WTForms o validación manual explícita. Las peticiones con datos inválidos reciben una respuesta de error descriptiva (código 400 con detalle de los campos problemáticos), no un error genérico 500. | | | | | |
+| 2A.1 | El proyecto backend **arranca sin errores** y el jurado puede verificarlo en el momento. La estructura del proyecto está organizada de manera explícita por el equipo con separación clara entre rutas/controladores, modelos, servicios y configuración por ambiente. | | | | | |
+| 2A.2 | El equipo puede justificar **por qué existe este servicio** en la arquitectura del sistema: qué responsabilidad específica tiene que no está cubierta por los backends anteriores. Las respuestas aceptables son arquitectónicamente coherentes; la respuesta "porque el módulo lo pedía" no es aceptable en el trimestre de cierre de la competencia. | | | | | |
+| 2A.3 | El proyecto usa un patrón o convención clara para organizar los endpoints en módulos o carpetas por dominio. Hay al menos dos módulos o controladores activos con sus rutas, y el archivo de entrada solo configura la aplicación sin contener lógica de negocio. | | | | | |
+| 2A.4 | La API implementa **validación de datos de entrada** en las rutas de creación y actualización mediante el mecanismo de la tecnología elegida (decoradores, middleware, esquemas o validación manual explícita). Las peticiones con datos inválidos reciben una respuesta de error descriptiva (código 400 con detalle de los campos problemáticos), no un error genérico 500. | | | | | |
 | 2A.5 | La API tiene **autenticación JWT funcional** integrada con el sistema: las rutas protegidas verifican el token antes de ejecutar la lógica, y ese token es compatible con el sistema de autenticación del proyecto (no hay un segundo sistema de login desconectado del resto). | | | | | |
-| 2A.6 | Existe un archivo `requirements.txt` actualizado, un `.env.example` con todas las variables de entorno requeridas, y el equipo puede demostrar que el proyecto **se instala y ejecuta desde cero** siguiendo las instrucciones del README. | | | | | |
-| 2A.7 | El equipo puede describir las **diferencias prácticas entre Flask y FastAPI** que experimentó al trabajar con ambos: qué hace Flask que FastAPI no hace por defecto, cuándo elegiría cada uno en un proyecto real y qué tuvo que configurar manualmente en Flask que FastAPI le daba automáticamente. Esta reflexión demuestra que el aprendizaje fue consciente, no mecánico. | | | | | |
+| 2A.6 | Existe un archivo de dependencias actualizado (`requirements.txt` para Python, `package.json` para Node, o equivalente), un archivo `.env.example` con todas las variables de entorno requeridas, y el equipo puede demostrar que el proyecto **se instala y ejecuta desde cero** siguiendo las instrucciones del README. | | | | | |
+| 2A.7 | El equipo puede describir **cómo la tecnología elegida para este backend se diferencia** de los otros backends del sistema: qué ventajas y desventajas tiene comparada con los anteriores, cuándo elegiria cada uno en un proyecto real, y qué tuvo que configurar manualmente en esta tecnología que otros frameworks le dan más automáticamente. Esta reflexión demuestra que el aprendizaje fue consciente, no mecánico. | | | | | |
 
 ### Bloque 2B — Coherencia e integración del sistema completo
 
-> Con cuatro backends, un frontend, BD relacional y NoSQL, el sistema en T6 es el más complejo que el equipo ha gestionado. Este bloque evalúa que esa complejidad está bajo control arquitectónico: cada componente tiene una responsabilidad clara, los componentes se comunican correctamente y el sistema como un todo es demostrable en vivo.
+> Con múltiples backends, un frontend, BD relacional y NoSQL, el sistema en T6 es el más complejo que el equipo ha gestionado. Este bloque evalúa que esa complejidad está bajo control arquitectónico: cada componente tiene una responsabilidad clara, los componentes se comunican correctamente y el sistema como un todo es demostrable en vivo.
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 2B.1 | El equipo tiene un **diagrama de arquitectura actualizado** que muestra todos los componentes del sistema en T6: frontend, los cuatro backends, BD relacional, BD NoSQL y cualquier servicio externo. El diagrama incluye los protocolos de comunicación entre componentes y es coherente con el código real. | | | | | |
+| 2B.1 | El equipo tiene un **diagrama de arquitectura actualizado** que muestra todos los componentes del sistema en T6: frontend, los backends, BD relacional, BD NoSQL y cualquier servicio externo. El diagrama incluye los protocolos de comunicación entre componentes y es coherente con el código real. | | | | | |
 | 2B.2 | El jurado puede solicitar una **demostración end-to-end** de al menos un caso de uso complejo que cruce múltiples capas del sistema. El flujo debe funcionar sin intervención manual del equipo para "arreglarlo" durante la demo. | | | | | |
 | 2B.3 | El equipo puede describir la **estrategia de autenticación centralizada** del sistema: cómo se emite el token, qué servicio lo valida, y cómo los diferentes backends verifican la identidad del usuario sin duplicar la lógica de autenticación. Si hay múltiples sistemas de login independientes, el equipo debe justificar por qué. | | | | | |
 
@@ -135,8 +135,8 @@
 |---|------------------------|----|----|----|----|--------------------------|
 | 3B.1 | Existe una **matriz de casos de prueba** con al menos 20 casos documentados que cubren como mínimo cuatro módulos o funcionalidades diferentes del sistema. Cada caso tiene: identificador único, nombre descriptivo, tipo de prueba, precondiciones, datos de entrada, pasos de ejecución, resultado esperado, resultado obtenido y estado (pasa / falla). | | | | | |
 | 3B.2 | La matriz incluye **casos positivos y negativos** en proporción razonable: no solo los flujos felices (datos válidos, usuario autenticado, servidor disponible) sino también los flujos de error (datos inválidos, campos requeridos vacíos, token expirado, recurso no encontrado). Los sistemas fallidos solo en condiciones perfectas no son robustos. | | | | | |
-| 3B.3 | El equipo tiene **pruebas unitarias automatizadas** ejecutables con un solo comando para al menos un módulo de lógica de negocio del backend (pytest para Flask/FastAPI o JUnit para Spring Boot). Las pruebas corren en el momento y producen un reporte visible. La cobertura mínima del módulo probado es del 50 % de sus funciones. | | | | | |
-| 3B.4 | Hay una **colección de pruebas de API** en Postman (o herramienta equivalente) exportada en el repositorio que cubre todos los endpoints de Flask y al menos los endpoints principales de los demás backends. La colección incluye tests automatizados de Postman (scripts en la pestaña "Tests") que verifican código de respuesta, estructura del JSON y al menos un campo del cuerpo de la respuesta. | | | | | |
+| 3B.3 | El equipo tiene **pruebas unitarias automatizadas** ejecutables con un solo comando para al menos un módulo de lógica de negocio del backend (pytest para Python o JUnit para Spring Boot, etc.). Las pruebas corren en el momento y producen un reporte visible. La cobertura mínima del módulo probado es del 50 % de sus funciones. | | | | | |
+| 3B.4 | Hay una **colección de pruebas de API** en Postman (o herramienta equivalente) exportada en el repositorio que cubre todos los endpoints del backend principal y al menos los endpoints principales de los demás servicios. La colección incluye tests automatizados (scripts en la pestaña "Tests") que verifican código de respuesta, estructura del JSON y al menos un campo del cuerpo de la respuesta. | | | | | |
 
 ### Bloque 3C — Reporte de pruebas y gestión de defectos
 
