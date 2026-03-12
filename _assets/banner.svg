@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#21262d"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="160" fill="#0d1117"/>
+  <rect width="900" height="160" fill="url(#dots)"/>
+
+  <!-- Left accent bar -->
+  <rect x="36" y="28" width="4" height="104" fill="#3fb950" rx="2"/>
+
+  <!-- Badge: SENA -->
+  <rect x="52" y="28" width="54" height="20" fill="#161b22" rx="10"/>
+  <text x="79" y="42"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="10" font-weight="700" fill="#3fb950" text-anchor="middle" letter-spacing="2">SENA</text>
+
+  <!-- Badge: ADSO -->
+  <rect x="114" y="28" width="94" height="20" fill="#161b22" rx="10"/>
+  <text x="161" y="42"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="10" font-weight="700" fill="#58a6ff" text-anchor="middle" letter-spacing="1">ADSO 228118</text>
+
+  <!-- Title -->
+  <text x="52" y="96"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="44" font-weight="800" fill="#e6edf3">Listas de Chequeo</text>
+
+  <!-- Subtitle -->
+  <text x="52" y="122"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="14" fill="#8b949e">Seguimiento de Proyectos Formativos · Regional Distrito Capital</text>
+
+  <!-- Vertical divider -->
+  <line x1="724" y1="28" x2="724" y2="132" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Scale legend -->
+  <rect x="738" y="34" width="14" height="14" fill="#3fb950" rx="3"/>
+  <text x="758" y="46"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="12" fill="#c9d1d9">Excelente</text>
+
+  <rect x="738" y="58" width="14" height="14" fill="#d29922" rx="3"/>
+  <text x="758" y="70"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="12" fill="#c9d1d9">Satisfactorio</text>
+
+  <rect x="738" y="82" width="14" height="14" fill="#f85149" rx="3"/>
+  <text x="758" y="94"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="12" fill="#c9d1d9">Insuficiente</text>
+
+  <rect x="738" y="106" width="14" height="14" fill="#484f58" rx="3"/>
+  <text x="758" y="118"
+    font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif"
+    font-size="12" fill="#8b949e">No Aplica</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="157" width="900" height="3" fill="#3fb950"/>
+</svg>
