@@ -24,6 +24,7 @@ Instrumento de evaluación estandarizado para las sesiones de seguimiento de pro
 - [Escala de valoración](#escala-de-valoración)
 - [Ponderación por etapa](#ponderación-por-etapa)
 - [Líneas rojas — dominios no aprobables](#líneas-rojas--dominios-no-aprobables)
+- [Tecnologías habilitadas](#tecnologías-habilitadas)
 - [Ventajas y limitaciones del instrumento](#ventajas-y-limitaciones-del-instrumento)
 - [Mapa del repositorio](#mapa-del-repositorio)
 - [Listas disponibles](#listas-disponibles)
@@ -108,6 +109,21 @@ Ciertos dominios están restringidos por razones pedagógicas, legales o de viab
 
 ---
 
+## Tecnologías habilitadas
+
+Stack de referencia para proyectos formativos. Ver razonamiento completo en [5.lineas-rojas-ideas-de-proyecto.md](5.lineas-rojas-ideas-de-proyecto.md).
+
+| Capa                              | Tecnología                                                                                     |
+| --------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Backend — API REST**            | JavaScript · Express · Node.js &nbsp;/&nbsp; Python · FastAPI &nbsp;/&nbsp; Java · Spring Boot |
+| **Frontend**                      | React                                                                                          |
+| **Base de datos relacional**      | PostgreSQL · MySQL                                                                             |
+| **Base de datos no relacional**   | MongoDB                                                                                        |
+| **Contenerización**               | Docker / Docker Compose _(deseable)_                                                           |
+| **Arquitectura mínima requerida** | MVC o equivalente en separación de responsabilidades                                           |
+
+---
+
 ## Ventajas y limitaciones del instrumento
 
 Ver análisis completo en [4.pros-cons.md](4.pros-cons.md).
@@ -143,7 +159,7 @@ checklist-proyectos-adso/
 ├── 2.estructura-de-lista-propuesta.md     ← las 5 dimensiones explicadas
 ├── 3.escala-valoración-propuesta.md       ← escala y ponderaciones
 ├── 4.pros-cons.md                         ← ventajas y limitaciones
-├── 5.lineas-rojas-ideas-de-proyecto.md    ← dominios restringidos y por qué
+├── 5.lineas-rojas-ideas-de-proyecto.md    ← dominios restringidos y stack de referencia
 │
 ├── _assets/
 │   ├── banner.svg
