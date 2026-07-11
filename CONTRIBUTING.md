@@ -51,6 +51,11 @@ Cada ítem debe ser:
 - **Alcanzable** — el trimestre actual lo permite; no pida lo que aún no se enseñó.
 - **Progresivo** — construye sobre el trimestre anterior.
 - **Orientado a evidencia** — pide artefactos concretos, no impresiones.
+- **Cronometrable** — quien lo escribe puede estimar en segundos/minutos cuánto toma verificarlo en vivo. Esa estimación determina su tier: 🎤 **verificación viva** (demo, explicación oral, pregunta directa — 1 a 1.5 min) o 👁 **inspección rápida** (vistazo binario existe/no existe — 20 a 30 seg). Ver el modelo completo en [6.tiempos-de-sesion.md](6.tiempos-de-sesion.md).
+
+### Límite de ítems por lista
+
+Cada lista de chequeo tiene una sesión de 20 minutos para todo: contexto, demo, preguntas, inspección de evidencia, retroalimentación, decisión y firmas. Objetivo: **máximo 32-34 ítems por lista**, con 8-10 de ellos en tier 🎤. Si una propuesta de ítem nuevo excede ese límite, la alternativa no es alargar la sesión: es fusionar el ítem con otro del mismo bloque que un jurado verificaría con la misma evidencia o la misma pregunta, o reclasificarlo a 👁 si su verificación real es más rápida de lo que parece. T1 y CF-T1 (sesión de aprobación de ideas) no están sujetas a este límite por ser estructuralmente distintas — ver justificación en `6.tiempos-de-sesion.md`.
 
 ### 4. Commits con Conventional Commits
 

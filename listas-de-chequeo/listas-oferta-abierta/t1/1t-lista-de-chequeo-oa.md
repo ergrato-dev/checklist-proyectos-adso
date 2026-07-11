@@ -31,6 +31,17 @@
 
 ---
 
+## Distribución del tiempo de sesión (20 min)
+
+| Bloque | Minutos |
+|--------|---------|
+| Bienvenida, datos de sesión y verificación Bloque A | 2 |
+| 🎤 Presentación y evaluación de las 3 ideas (Bloques B, C y D — D se observa en simultáneo con B, sin tiempo adicional) | 12 |
+| Retroalimentación, decisión del jurado (Bloque E) y firmas | 6 |
+| **Total** | **20** |
+
+---
+
 ## Bloque A — Constitución del equipo
 
 > **Prerequisito de entrada.** Estos ítems deben cumplirse antes de iniciar
@@ -39,10 +50,10 @@
 
 | #   | Criterio | ✅ Cumple | 🔴 No cumple | Observación |
 |-----|----------|-----------|--------------|-------------|
-| A.1 | El grupo tiene entre 3 y 5 integrantes. Se recomienda número impar para facilitar la toma de decisiones colectivas por mayoría simple. | | | |
-| A.2 | Cada integrante se presenta con nombre completo y puede identificar a todos sus compañeros de grupo por nombre. | | | |
-| A.3 | El grupo tiene un nombre de equipo y ha designado un vocero o líder para esta sesión. El rol puede rotar en trimestres siguientes. | | | |
-| A.4 | **El grupo tiene cinco integrantes (fuertemente recomendado en primer
+| A.1 | 👁 El grupo tiene entre 3 y 5 integrantes. Se recomienda número impar para facilitar la toma de decisiones colectivas por mayoría simple. | | | |
+| A.2 | 🎤 Cada integrante se presenta con nombre completo y puede identificar a todos sus compañeros de grupo por nombre. | | | |
+| A.3 | 👁 El grupo tiene un nombre de equipo y ha designado un vocero o líder para esta sesión. El rol puede rotar en trimestres siguientes. | | | |
+| A.4 | 🎤 **El grupo tiene cinco integrantes (fuertemente recomendado en primer
 trimestre).** Grupos de tres son el mínimo aceptable solo cuando el número
 total de aprendices de la ficha no permite conformar grupos de cinco. El
 instructor debe registrar la justificación si aprueba un grupo de menos de
@@ -66,12 +77,12 @@ es, antes que una restricción, una decisión de calidad pedagógica.* | | | |
 
 | #   | Criterio de evaluación | Idea 1 | Idea 2 | Idea 3 | Observaciones del jurado |
 |-----|------------------------|--------|--------|--------|--------------------------|
-| B.1 | El grupo enuncia claramente el **problema** que el software resuelve —no la solución, sino el problema— en máximo tres frases. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
-| B.2 | El grupo identifica al menos un **usuario real o tipo de usuario** que tiene ese problema hoy, de forma concreta y no genérica. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
-| B.3 | El grupo puede narrar un **ejemplo de uso cotidiano** del software propuesto, aunque sea de forma informal y sin artefactos de diseño. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
-| B.4 | El grupo menciona al menos un **software existente similar** y puede explicar en qué se diferenciaría su propuesta, así sea brevemente. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
-| B.5 | El alcance propuesto es **realizable por un equipo de 3 a 5 personas a lo largo del programa formativo**, sin depender de infraestructuras, presupuestos o tecnologías inalcanzables. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
-| B.6 | El dominio propuesto **no incurre en ninguna línea roja** definida en el Bloque C. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+| B.1 | 🎤 El grupo enuncia claramente el **problema** que el software resuelve —no la solución, sino el problema— en máximo tres frases. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+| B.2 | 🎤 El grupo identifica al menos un **usuario real o tipo de usuario** que tiene ese problema hoy, de forma concreta y no genérica. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+| B.3 | 🎤 El grupo puede narrar un **ejemplo de uso cotidiano** del software propuesto, aunque sea de forma informal y sin artefactos de diseño. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+| B.4 | 🎤 El grupo menciona al menos un **software existente similar** y puede explicar en qué se diferenciaría su propuesta, así sea brevemente. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+| B.5 | 👁 El alcance propuesto es **realizable por un equipo de 3 a 5 personas a lo largo del programa formativo**, sin depender de infraestructuras, presupuestos o tecnologías inalcanzables. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
+| B.6 | 👁 El dominio propuesto **no incurre en ninguna línea roja** definida en el Bloque C. | ☐✅ ☐🔴 | ☐✅ ☐🔴 | ☐✅ ☐🔴 | |
 
 
 *Nota: Para los instructores*
@@ -126,10 +137,10 @@ es, antes que una restricción, una decisión de calidad pedagógica.* | | | |
 
 | #   | Criterio | ✅ | 🟡 | 🔴 | ➖ | Observaciones |
 |-----|----------|----|----|----|----|----|
-| D.1 | **Participación distribuida:** todos los integrantes toman la palabra durante la presentación; no es una exposición individual del líder con los demás como espectadores. | | | | | |
-| D.2 | **Solidez ante preguntas:** el grupo responde las preguntas del jurado sin colapsar, sin contradicciones evidentes y sin delegar todas las respuestas al mismo integrante. | | | | | |
-| D.3 | **Preparación mínima del dominio:** el grupo demuestra que investigó el contexto del problema propuesto antes de la sesión; las ideas no parecen improvisadas en el momento. | | | | | |
-| D.4 | **Actitud ante el feedback:** el grupo recibe las observaciones del jurado con apertura constructiva, hace preguntas de clarificación si no entiende algo y no adopta una postura defensiva o cerrada. | | | | | |
+| D.1 | 🎤 **Participación distribuida:** todos los integrantes toman la palabra durante la presentación; no es una exposición individual del líder con los demás como espectadores. | | | | | |
+| D.2 | 🎤 **Solidez ante preguntas:** el grupo responde las preguntas del jurado sin colapsar, sin contradicciones evidentes y sin delegar todas las respuestas al mismo integrante. | | | | | |
+| D.3 | 👁 **Preparación mínima del dominio:** el grupo demuestra que investigó el contexto del problema propuesto antes de la sesión; las ideas no parecen improvisadas en el momento. | | | | | |
+| D.4 | 🎤 **Actitud ante el feedback:** el grupo recibe las observaciones del jurado con apertura constructiva, hace preguntas de clarificación si no entiende algo y no adopta una postura defensiva o cerrada. | | | | | |
 
 ---
 

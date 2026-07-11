@@ -55,6 +55,8 @@
 | 🔴 | **Insuficiente** | No cumple o la evidencia es muy débil / ausente |
 | ➖ | **No aplica** | El ítem no corresponde al tipo o contexto de este proyecto |
 
+**Tiers de verificación** (ver [6.tiempos-de-sesion.md](../../../6.tiempos-de-sesion.md)): 🎤 verificación viva (demo/explicación oral, 1-1.5 min) · 👁 inspección rápida (vistazo binario, 20-30 seg).
+
 ---
 
 ## Ponderación por dimensión
@@ -71,17 +73,28 @@
 
 ---
 
+## Distribución del tiempo de sesión (20 min)
+
+| Bloque | Minutos |
+| --- | --- |
+| Contexto y datos de sesión | 1 |
+| 🎤 Demo en vivo + preguntas (12 ítems 🎤: sistema desplegado, capacitación simulada, cierre, bloque serial) | 15 |
+| 👁 Inspección rápida (manuales, plan de calidad, evidencia de repo) — en paralelo, Jurado 2 | — |
+| Retroalimentación, decisión y firmas | 4 |
+| **Total** | **20** |
+
+---
+
 ## DIMENSIÓN 1 — Cierre de la Construcción del Software (20 %)
 
 > Esta dimensión cierra definitivamente el RA 01 de Construcción (planeación) que ha venido como resultado parcial desde T6, y evalúa el estado final del código del proyecto. No se esperan funcionalidades nuevas revolucionarias en T7: se espera un sistema terminado, limpio, estable y con la deuda técnica documentada y gestionada.
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 1.1 | El sistema completo **funciona de manera integrada y estable**: todos los componentes activos (frontend, cuatro backends, BD relacional, BD NoSQL) operan sin errores críticos en el entorno desplegado. El jurado puede solicitar la ejecución de cualquier caso de uso del sistema durante la sesión y el equipo debe poder demostrarlo sin intervención de corrección en el momento. | | | | | |
-| 1.2 | El equipo presenta el **estado final del backlog del proyecto**: porcentaje de historias de usuario completadas respecto al SRS original, con una justificación documentada y honesta para las historias que quedaron fuera del alcance de la etapa lectiva. La deuda de alcance no es un problema per se; no tenerla documentada sí lo es. | | | | | |
-| 1.3 | El **plan de construcción final** está documentado: incluye la lista de funcionalidades entregadas en T7, las actividades de estabilización realizadas (corrección de defectos residuales, optimizaciones mínimas, limpieza de código), y la descripción de lo que queda pendiente para la etapa productiva con su prioridad. | | | | | |
-| 1.4 | El código fuente está **limpio y organizado para entrega definitiva**: no hay archivos de depuración, ramas de experimentos sin cerrar, código comentado masivamente que revele iteraciones sin resolver, ni `console.log` / `print` de desarrollo en el código de producción. El repositorio en su estado actual debe poder entregarse a un cliente sin vergüenza técnica. | | | | | |
-| 1.5 | El sistema implementa **seguridad básica verificable**: las contraseñas están almacenadas con hash (bcrypt u otro), los tokens JWT tienen tiempo de expiración definido, las consultas a BD usan ORM o consultas parametrizadas (sin vulnerabilidades de inyección SQL), y las rutas protegidas rechazan correctamente peticiones sin autenticación válida. | | | | | |
+| 1.1 | 🎤 El sistema completo **funciona de manera integrada y estable**: todos los componentes activos (frontend, cuatro backends, BD relacional, BD NoSQL) operan sin errores críticos en el entorno desplegado. El jurado puede solicitar la ejecución de cualquier caso de uso del sistema durante la sesión y el equipo debe poder demostrarlo sin intervención de corrección en el momento. | | | | | |
+| 1.2 | 🎤 El equipo presenta el **estado final del backlog del proyecto**: porcentaje de historias completadas respecto al SRS original, con una justificación documentada y honesta para las historias que quedaron fuera del alcance de la etapa lectiva. | | | | | |
+| 1.3 | 👁 El **plan de construcción final** documenta las funcionalidades entregadas en T7 y lo que queda pendiente para la etapa productiva con su prioridad, y el código fuente está **limpio y organizado para entrega definitiva**: sin archivos de depuración, ramas de experimentos sin cerrar, código comentado masivamente, ni `console.log`/`print` de desarrollo. | | | | | |
+| 1.4 | 👁 El sistema implementa **seguridad básica verificable**: contraseñas con hash (bcrypt u otro), tokens JWT con expiración definida, consultas a BD parametrizadas o vía ORM (sin inyección SQL), y rutas protegidas que rechazan peticiones sin autenticación válida. | | | | | |
 
 ---
 
@@ -93,26 +106,24 @@
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 2A.1 | Existe un **plan de implantación documentado** que describe como mínimo: las actividades de despliegue con su secuencia y responsables, los requisitos de infraestructura del sistema (hardware mínimo, sistema operativo, puertos requeridos, servicios de terceros), los criterios de éxito de la implantación, y el plan de contingencia para el caso en que algo falle durante el despliegue. | | | | | |
-| 2A.2 | El plan incluye una **estrategia de migración de datos** o describe explícitamente por qué no aplica: si el sistema reemplaza a uno anterior o importa datos desde fuentes externas, hay un procedimiento documentado. Si el sistema es completamente nuevo sin datos previos, esa decisión está justificada en el plan. | | | | | |
-| 2A.3 | El plan define una **estrategia de copias de seguridad**: qué datos son críticos, con qué frecuencia se respaldan, dónde se almacenan los respaldos (separados del servidor principal), y cómo se ejecuta una restauración desde una copia de seguridad. Aunque sea un entorno de prueba, la estrategia debe ser técnicamente viable y coherente con el sistema. | | | | | |
+| 2A.1 | 👁 Existe un **plan de implantación documentado**: actividades de despliegue con secuencia y responsables, requisitos de infraestructura, criterios de éxito, y plan de contingencia. | | | | | |
+| 2A.2 | 👁 El plan incluye una **estrategia de migración de datos** (o justifica explícitamente por qué no aplica) y una **estrategia de copias de seguridad**: datos críticos, frecuencia, almacenamiento separado del servidor principal y procedimiento de restauración. | | | | | |
 
 ### Bloque 2B — Despliegue del sistema (RA 02 de Implantación)
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 2B.1 | El sistema está **desplegado en un entorno diferente al local** de desarrollo: nube (Railway, Render, AWS, GCP, Azure, Fly.io u otro), servidor del centro de formación, o un entorno Docker Compose reproducible. El jurado puede acceder al sistema desplegado desde un navegador durante la sesión usando la URL declarada en la portada. | | | | | |
-| 2B.2 | El despliegue usa **separación de configuración por ambiente**: las variables sensibles (cadenas de conexión, claves secretas, credenciales de servicios) están en variables de entorno del servidor y no en el repositorio de código. Existe un archivo `.env.example` con las variables requeridas documentadas (sin valores reales). | | | | | |
-| 2B.3 | El equipo puede demostrar que el sistema se **puede desplegar desde cero** siguiendo únicamente las instrucciones del manual de instalación: clonar el repositorio, configurar las variables de entorno, ejecutar los scripts de BD y levantar los servicios. No debe requerir conocimiento implícito que solo tiene el equipo. | | | | | |
-| 2B.4 | Si el proyecto usa **contenedores Docker**, existe un `Dockerfile` por servicio y un `docker-compose.yml` funcional que levanta todo el sistema con un solo comando. Si no usa contenedores, existe un script de instalación o un README de despliegue con pasos verificados por el equipo en un ambiente limpio. | | | | | |
+| 2B.1 | 🎤 El sistema está **desplegado en un entorno diferente al local** de desarrollo (nube, servidor del centro, o Docker Compose reproducible). El jurado accede al sistema desplegado desde un navegador durante la sesión usando la URL declarada. | | | | | |
+| 2B.2 | 👁 El despliegue usa **separación de configuración por ambiente** (variables sensibles fuera del repositorio, `.env.example` documentado) y, si usa **contenedores Docker**, tiene `Dockerfile` por servicio y `docker-compose.yml` funcional; si no, tiene script de instalación o README de despliegue verificado en ambiente limpio. | | | | | |
+| 2B.3 | 🎤 El equipo demuestra que el sistema se **puede desplegar desde cero** siguiendo únicamente el manual de instalación: clonar, configurar variables, ejecutar scripts de BD y levantar servicios, sin conocimiento implícito. | | | | | |
 
 ### Bloque 2C — Implantación con el cliente (RA 04 de Implantación)
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 2C.1 | El equipo elaboró un **plan de capacitación de usuarios** que define: los perfiles de usuario a capacitar (administrador, usuario regular, otros roles del sistema), los temas de cada sesión de capacitación, la duración estimada, los materiales de apoyo preparados y los criterios para considerar que el usuario fue capacitado exitosamente. | | | | | |
-| 2C.2 | El equipo puede presentar o demostrar al menos **una sesión de capacitación simulada**: el equipo asume el rol de capacitador y guía a los jurados (en el rol de usuarios finales) a través de las funcionalidades principales del sistema, usando el sistema real desplegado y el manual de usuario como soporte. | | | | | |
-| 2C.3 | Existen **pruebas de aceptación documentadas**: al menos cinco casos de uso verificados con el cliente simulado (jurado o instructor que asume ese rol), con el resultado de cada prueba registrado (aceptado / rechazado / aceptado con observaciones) y la firma o constancia de quien actuó como cliente. | | | | | |
+| 2C.1 | 👁 El equipo elaboró un **plan de capacitación de usuarios**: perfiles a capacitar, temas, duración, materiales de apoyo y criterios de éxito de la capacitación. | | | | | |
+| 2C.2 | 🎤 El equipo presenta o demuestra al menos **una sesión de capacitación simulada**: asume el rol de capacitador y guía a los jurados (como usuarios finales) por las funcionalidades principales, usando el sistema real desplegado y el manual de usuario como soporte. | | | | | |
+| 2C.3 | 👁 Existen **pruebas de aceptación documentadas**: al menos cinco casos de uso verificados con el cliente simulado, con resultado (aceptado / rechazado / con observaciones) y constancia de quien actuó como cliente. | | | | | |
 
 ---
 
@@ -124,25 +135,24 @@
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 3A.1 | El equipo adoptó al menos **un estándar o referente de calidad reconocido** para el proceso de desarrollo del proyecto: puede ser ISO/IEC 25010 (modelo de calidad del producto), CMMI (niveles de madurez de proceso), PSP (proceso personal de software), o una selección documentada de prácticas de XP o Scrum con justificación. La adopción es real si el equipo puede mostrar cómo ese estándar influyó en decisiones concretas del proyecto. | | | | | |
-| 3A.2 | El equipo tiene un **plan de aseguramiento de calidad (PAC)** del proyecto que define: los atributos de calidad priorizados para el sistema (funcionalidad, fiabilidad, usabilidad, eficiencia, mantenibilidad, portabilidad u otros de ISO 25010), las actividades de QA incorporadas al proceso de construcción, y las métricas usadas para medirlos. | | | | | |
-| 3A.3 | El repositorio tiene configurado al menos un **pipeline de integración continua (CI)** que ejecuta pruebas automatizadas en cada push o pull request a la rama principal. El equipo puede mostrar el historial de ejecuciones del pipeline. Si CI completo no es técnicamente viable en el entorno del equipo, existe al menos un script que ejecuta todas las pruebas con un solo comando y el equipo puede demostrarlo. | | | | | |
+| 3A.1 | 🎤 El equipo adoptó al menos **un estándar o referente de calidad reconocido** (ISO/IEC 25010, CMMI, PSP, o una selección documentada de prácticas de XP/Scrum) y puede mostrar cómo influyó en decisiones concretas del proyecto. | | | | | |
+| 3A.2 | 👁 El equipo tiene un **plan de aseguramiento de calidad** (atributos de calidad priorizados, actividades de QA, métricas) y un **pipeline de CI** (o un script único que ejecuta todas las pruebas con un comando), demostrable con el historial de ejecuciones. | | | | | |
 
 ### Bloque 3B — Verificación de la calidad (RA 02 de Calidad)
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 3B.1 | Existe un **informe de evaluación de calidad** del sistema que evalúa el cumplimiento de los requisitos no funcionales definidos en el SRS: tiempo de respuesta de los endpoints más usados, disponibilidad del sistema desplegado, comportamiento bajo carga básica, y al menos dos atributos de calidad del modelo adoptado con sus métricas medidas vs. sus metas. | | | | | |
-| 3B.2 | Se realizaron **pruebas de los atributos de calidad no funcionales**: hay evidencia de al menos una prueba de rendimiento (tiempo de respuesta de un endpoint bajo múltiples peticiones, usando JMeter, Locust, k6 u otra herramienta), una prueba de usabilidad (al menos un usuario externo al equipo usó el sistema y sus observaciones fueron registradas), o una evaluación de seguridad básica (OWASP Top 10 checklist aplicada al sistema). | | | | | |
-| 3B.3 | El equipo elaboró una **bitácora de lecciones aprendidas** del proyecto completo (T1 a T7) que documenta: decisiones técnicas que resultaron buenas y por qué, decisiones que generaron problemas y qué hubieran hecho diferente, prácticas de proceso que funcionaron y cuáles no, y al menos tres aprendizajes concretos que el equipo llevaría a un proyecto profesional real. | | | | | |
+| 3B.1 | 👁 Existe un **informe de evaluación de calidad** del sistema: cumplimiento de requisitos no funcionales del SRS (tiempo de respuesta, disponibilidad, comportamiento bajo carga) y al menos dos atributos del modelo adoptado con métricas medidas vs. metas. | | | | | |
+| 3B.2 | 👁 Se realizaron **pruebas de atributos de calidad no funcionales**: rendimiento (JMeter, Locust, k6 u otra), usabilidad (usuario externo al equipo con observaciones registradas), o seguridad básica (OWASP Top 10 aplicado al sistema). | | | | | |
+| 3B.3 | 🎤 El equipo elaboró una **bitácora de lecciones aprendidas** de T1 a T7: decisiones técnicas buenas y malas, prácticas de proceso que funcionaron, y al menos tres aprendizajes concretos transferibles a un proyecto profesional. | | | | | |
 
 ### Bloque 3C — Mejora de la calidad (RA 03 de Calidad)
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 3C.1 | Existe un **plan de mejora** documentado que nace de los resultados de la verificación de calidad: al menos tres acciones correctivas o preventivas concretas, con el problema que las originó, la acción implementada o propuesta, el responsable y el estado (implementada antes del cierre de T7 o propuesta para la etapa productiva con justificación). | | | | | |
-| 3C.2 | El equipo puede demostrar **al menos dos mejoras implementadas** como resultado directo del proceso de verificación de calidad: refactorización de un módulo que tenía alta complejidad ciclomática, corrección de una vulnerabilidad detectada en la evaluación de seguridad, mejora del tiempo de respuesta de un endpoint lento, o ajuste de la interfaz basado en las observaciones de la prueba de usabilidad. | | | | | |
-| 3C.3 | El equipo puede presentar una **autoevaluación del proceso de desarrollo** a lo largo de los siete trimestres: en qué nivel de madurez sitúa su proceso (usando el referente adoptado), qué mejoró significativamente desde T1 y qué quedó como área de oportunidad para la etapa productiva. El jurado evalúa la calidad del análisis crítico, no si el proceso fue perfecto. | | | | | |
+| 3C.1 | 👁 Existe un **plan de mejora** con al menos tres acciones correctivas o preventivas concretas: problema que las originó, acción, responsable y estado. | | | | | |
+| 3C.2 | 🎤 El equipo demuestra **al menos dos mejoras implementadas** como resultado directo de la verificación de calidad: refactorización, corrección de vulnerabilidad, mejora de tiempo de respuesta, o ajuste basado en pruebas de usabilidad. | | | | | |
+| 3C.3 | 🎤 El equipo presenta una **autoevaluación del proceso de desarrollo** de los siete trimestres: nivel de madurez según el referente adoptado, qué mejoró desde T1 y qué queda como oportunidad. El jurado evalúa la calidad del análisis crítico, no si el proceso fue perfecto. | | | | | |
 
 ---
 
@@ -152,11 +162,10 @@
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 4.1 | El **manual técnico** del sistema está completo y describe: arquitectura del sistema con diagrama actualizado, stack tecnológico con versiones exactas, estructura del repositorio, descripción de cada componente, guía de instalación y despliegue paso a paso, descripción de la base de datos (modelo entidad-relación + diccionario de datos), y descripción de los endpoints principales de la API. Debe ser suficiente para que un técnico de sistemas externo al equipo pueda instalar, configurar y mantener el sistema. | | | | | |
-| 4.2 | El **manual de usuario** cubre todos los roles del sistema con sus flujos principales: está escrito en lenguaje no técnico, usa capturas de pantalla actualizadas del sistema real desplegado (no mockups ni capturas del entorno local), tiene una sección de preguntas frecuentes, y describe cómo el usuario debe interpretar y reaccionar ante los mensajes de error más comunes del sistema. | | | | | |
-| 4.3 | Existe un **plan de mantenimiento y soporte** del sistema: define los tipos de mantenimiento previstos (correctivo, preventivo, adaptativo, perfectivo), la frecuencia de cada uno, los procedimientos de respaldo y restauración, los criterios para escalar un problema al equipo de desarrollo, y el tiempo de respuesta esperado para incidentes de diferente severidad. | | | | | |
-| 4.4 | El **repositorio está organizado para entrega definitiva**: el README es la puerta de entrada al sistema y tiene acceso a todos los documentos; la carpeta de documentación contiene los manuales, el plan de pruebas, el informe de calidad y el plan de implantación; los scripts de BD están organizados en orden de ejecución; y no hay archivos temporales, carpetas de prueba vacías ni `node_modules` / `__pycache__` commiteados por error. | | | | | |
-| 4.5 | La **documentación de la API** está disponible en el sistema desplegado o en el repositorio: Swagger UI accesible en el ambiente de producción, colección Postman exportada con todos los endpoints, o una especificación OpenAPI generada automáticamente. La documentación cubre todos los servicios activos del sistema (Spring Boot, FastAPI, Express, Flask) con ejemplos de petición y respuesta para cada endpoint. | | | | | |
+| 4.1 | 👁 El **manual técnico** describe arquitectura con diagrama actualizado, stack con versiones exactas, estructura del repositorio, guía de instalación y despliegue paso a paso, descripción de la BD (MER + diccionario) y de los endpoints principales. Suficiente para que un técnico externo mantenga el sistema. | | | | | |
+| 4.2 | 👁 El **manual de usuario** cubre todos los roles con sus flujos principales, en lenguaje no técnico, con capturas del sistema real desplegado (no mockups), preguntas frecuentes, y cómo interpretar los mensajes de error más comunes. | | | | | |
+| 4.3 | 👁 Existe un **plan de mantenimiento y soporte**: tipos de mantenimiento previstos, frecuencia, procedimientos de respaldo/restauración, criterios de escalamiento y tiempo de respuesta esperado por severidad. | | | | | |
+| 4.4 | 👁 El **repositorio está organizado para entrega definitiva** (README como puerta de entrada, carpeta de documentación con manuales/plan de pruebas/informe de calidad, sin archivos temporales ni `node_modules`/`__pycache__` commiteados), y la **documentación de la API** cubre todos los servicios activos con ejemplos de petición y respuesta. | | | | | |
 
 ---
 
@@ -166,10 +175,10 @@
 
 | # | Criterio de evaluación | ✅ | 🟡 | 🔴 | ➖ | Observaciones del jurado |
 |---|------------------------|----|----|----|----|--------------------------|
-| 5.1 | El **historial del repositorio** en T7 muestra actividad distribuida y coherente: hay commits de construcción, de corrección de defectos y de documentación, distribuidos entre los integrantes hasta la semana de sustentación. La proporción de commits por integrante es razonablemente equilibrada y el log no muestra actividad artificial concentrada en los días anteriores a la presentación. | | | | | |
-| 5.2 | Cada integrante puede **defender el sistema completo** ante el jurado: si se le pregunta sobre un componente que no desarrolló principalmente, puede explicar su propósito, su arquitectura básica y cómo se integra con el resto. La especialización es válida y esperable; el desconocimiento total de componentes del sistema propio no es aceptable en el cierre lectivo. | | | | | |
-| 5.3 | El equipo puede presentar una **hoja de ruta hacia la etapa productiva** con criterio técnico: qué funcionalidades quedan pendientes y por qué se priorizaron así, qué deuda técnica existe documentada y cuál es su impacto real en el sistema, qué mejorarían de la arquitectura si empezaran de nuevo, y qué necesitan hacer en la etapa productiva para llevar el sistema a un estado de producción real frente a un cliente externo. | | | | | |
-| 5.4 | El equipo puede hacer una **reflexión comparativa de los siete trimestres** con pensamiento crítico genuino: qué fue lo más difícil técnicamente del programa y cómo lo superaron, qué trimestre fue el punto de inflexión en el aprendizaje del equipo, cómo cambió su forma de trabajar desde T1 hasta T7, y qué llevan como aprendizaje transferible para su primer trabajo como tecnólogos. El jurado evalúa la profundidad del análisis, no si el proceso fue exitoso. | | | | | |
+| 5.1 | 👁 El **historial del repositorio** en T7 muestra actividad distribuida y coherente entre integrantes hasta la semana de sustentación, sin actividad artificial concentrada en los días previos. | | | | | |
+| 5.2 | 🎤 Cada integrante puede **defender el sistema completo** ante el jurado: si se le pregunta sobre un componente que no desarrolló principalmente, puede explicar su propósito, arquitectura básica e integración con el resto. | | | | | |
+| 5.3 | 🎤 El equipo presenta una **hoja de ruta hacia la etapa productiva**: funcionalidades pendientes y su priorización, deuda técnica documentada con su impacto real, y qué necesitan hacer para llevar el sistema a producción real. | | | | | |
+| 5.4 | 🎤 El equipo hace una **reflexión comparativa de los siete trimestres** con pensamiento crítico genuino: lo más difícil técnicamente y cómo lo superaron, el punto de inflexión en el aprendizaje, y qué llevan como aprendizaje transferible para su primer trabajo. El jurado evalúa la profundidad del análisis, no si el proceso fue exitoso. | | | | | |
 
 ---
 
@@ -205,7 +214,7 @@
 ## Retroalimentación cualitativa del jurado — Cierre de etapa lectiva
 
 | Jurado | Logro más significativo del equipo en los siete trimestres | Recomendación más importante para la etapa productiva |
-|--------|------------------------------------------------------------|-------------------------------------------------------|
+|--------|--------------------------------------------------------------|----------------------------------------------------------|
 | Jurado 1 | | |
 | Jurado 2 | | |
 

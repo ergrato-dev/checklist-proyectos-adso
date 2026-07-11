@@ -26,6 +26,7 @@ Instrumento de evaluación estandarizado para las sesiones de seguimiento de pro
 - [Estructura de cada lista](#estructura-de-cada-lista)
 - [Escala de valoración](#escala-de-valoración)
 - [Ponderación por etapa](#ponderación-por-etapa)
+- [Distribución del tiempo de sesión](#distribución-del-tiempo-de-sesión)
 - [Líneas rojas — dominios no aprobables](#líneas-rojas--dominios-no-aprobables)
 - [Tecnologías habilitadas](#tecnologías-habilitadas)
 - [Ventajas y limitaciones del instrumento](#ventajas-y-limitaciones-del-instrumento)
@@ -40,6 +41,8 @@ Instrumento de evaluación estandarizado para las sesiones de seguimiento de pro
 ## ¿Por qué existe este instrumento?
 
 Sin un instrumento común, cada instructor evalúa con criterios distintos: inequidad entre grupos, confusión en los aprendices y dificultad para detectar rezagos a tiempo. Ver el problema completo en [0.problema.md](0.problema.md).
+
+> **Nota de evolución:** las listas fueron reformuladas para ser ejecutables dentro de los 20 minutos reales de sesión por grupo, tras retroalimentación de pares instructores sobre su extensión. Ver qué cambió y por qué en la sección [Evolución: de la complejidad a la viabilidad](0.problema.md#evolución-de-la-complejidad-a-la-viabilidad) de `0.problema.md`.
 
 ---
 
@@ -96,6 +99,12 @@ Ver contexto completo en [3.escala-valoración-propuesta.md](3.escala-valoració
 | Calidad y Mejores Prácticas | 10%   | 15%   | 15% |
 
 <img src="_assets/progresion-trimestral.svg" alt="Diagrama de progresión trimestral OA y CF · ADSO 228118" width="100%"/>
+
+---
+
+## Distribución del tiempo de sesión
+
+Cada sesión de seguimiento dura 20 minutos por grupo. Cada ítem de cada lista se etiqueta como 🎤 (verificación viva: demo, explicación oral) o 👁 (inspección rápida: vistazo binario), y cada lista incluye una tabla de distribución de esos 20 minutos calibrada a su conteo de ítems por tier. Ver el modelo completo en [6.tiempos-de-sesion.md](6.tiempos-de-sesion.md).
 
 ---
 
@@ -166,6 +175,7 @@ checklist-proyectos-adso/
 ├── 3.escala-valoración-propuesta.md       ← escala y ponderaciones
 ├── 4.pros-cons.md                         ← ventajas y limitaciones
 ├── 5.lineas-rojas-ideas-de-proyecto.md    ← dominios restringidos y stack de referencia
+├── 6.tiempos-de-sesion.md                 ← tiers de verificación y time-boxing de 20 min
 │
 ├── _assets/
 │   ├── banner.svg
@@ -242,7 +252,8 @@ Si eres **instructor o jurado** que va a usar las listas por primera vez:
 
 ```
 0.problema.md  →  1.justificación-metodologica.md  →  2.estructura-de-lista-propuesta.md
-      →  3.escala-valoración-propuesta.md  →  5.lineas-rojas-ideas-de-proyecto.md
+      →  3.escala-valoración-propuesta.md  →  6.tiempos-de-sesion.md
+      →  5.lineas-rojas-ideas-de-proyecto.md
       →  Lista del trimestre correspondiente en listas-de-chequeo/
 ```
 
