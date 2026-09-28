@@ -227,10 +227,12 @@ checklist-proyectos-adso/
 
 ## Cómo usar una lista
 
+Cada lista es un **instrumento operativo de una página** (10-15 ítems), pensado para diligenciarse en los **20-30 minutos** que dura la sustentación de un grupo. El fundamento pedagógico de cada criterio —por qué existe, a qué RAP corresponde— no está en la lista sino en los documentos `0` a `5` de esta raíz; ver [Formato operativo: una lista, una página](2.estructura-de-lista-propuesta.md#formato-operativo-una-lista-una-página).
+
 1. Identificar el trimestre del grupo y su modalidad (**OA** u **CF**).
 2. Abrir el archivo correspondiente en `listas-de-chequeo/`.
-3. Completar los **Datos de la sesión** (ficha, integrantes presentes, jurado, fecha).
-4. Valorar cada ítem con la escala ✅ 🟡 🔴 ➖.
+3. Completar los **datos de la sesión** (ficha, integrantes presentes, jurado, fecha) en la línea de encabezado.
+4. Valorar cada ítem de la tabla única con la escala ✅ 🟡 🔴 ➖.
 5. Registrar observaciones por ítem donde sea necesario.
 6. Consignar la **decisión final del jurado** y los compromisos adquiridos por el equipo.
 

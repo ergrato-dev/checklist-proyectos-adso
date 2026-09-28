@@ -1,209 +1,51 @@
-# Lista de Chequeo — Trimestre II
+# Lista de Chequeo T2 — Oferta Abierta
+## Análisis de Requisitos · ADSO 228118 · SENA CGMLTI
 
-## Seguimiento de Proyecto Formativo · Oferta Abierta
+> **RAP activos:** Especificación y Análisis de Requisitos (SRS, historias, UML) · Construcción de BD (parcial) · POO en Java · HTML/CSS Responsive. **Propósito:** consolidar el SRS, primeros modelos UML, esquema relacional normalizado y primer código Java + prototipo web. Fundamento pedagógico completo de cada dimensión: `1.justificación-metodologica.md` y `2.estructura-de-lista-propuesta.md`.
 
-### Programa ADSO Cód. 228118 | SENA — Centro de Gestión de Mercados, Logística y TI | Regional Distrito Capital
+**Ficha:** _______  **Equipo:** ____________________  **Sistema:** ____________________
+**Presentes/Total:** ___/___  **Fecha:** __________  **Jurado 1:** ____________  **Jurado 2:** ____________
 
----
+**Escala:** ✅🟡🔴➖ (ver `3.escala-valoración-propuesta.md`) · **Ponderación:** D1 20 % · D2 40 % · D3 20 % · D4 10 % · D5 10 %
 
-> **Fase del proyecto formativo:** Análisis de Requisitos — Proyecto II  
-> **Competencias activas:** Especificación de Requisitos del Software (cierre) · Análisis de la Especificación de Requisitos del Software (inicio) · Construcción de BD (parcial) · Programación en Java (POO) · HTML/CSS/Responsive · Gestión de Procesos  
-> **Propósito del trimestre:** El equipo consolida el documento de especificación de requisitos (SRS), produce los primeros modelos UML del sistema (casos de uso, diagramas de actividades, modelo de dominio), estructura la base de datos relacional como resultado parcial, demuestra avance en programación orientada a objetos en Java y presenta un primer prototipo de interfaz web responsive.
+## Ítems
 
----
+| # | Dim | Criterio | ✅ | 🟡 | 🔴 | ➖ | Obs. |
+|---|---|---|---|---|---|---|---|
+| 1 | D1 | Tablero de seguimiento actualizado y coherente con lo presentado en sustentación. | | | | | |
+| 2 | D1 | Roles definidos y operativos; cada integrante explica su aporte del trimestre. | | | | | |
+| 3 | D2 | SRS estructurado (IEEE 830 / IREB) con ≥15 requisitos funcionales y no funcionales en ≥3 categorías. | | | | | |
+| 4 | D2 | Historias de usuario con criterios de aceptación, cubriendo ≥80 % de los RF. | | | | | |
+| 5 | D2 | Diagramas de casos de uso + modelo de dominio coherentes con los RF (trazabilidad demostrable). | | | | | |
+| 6 | D2 | MER conceptual + modelo lógico normalizado a 3FN + diccionario de datos preliminar. | | | | | |
+| 7 | D2 | Código Java demuestra los 4 pilares de POO, organizado en paquetes, versionado con evolución real (no un solo commit). | | | | | |
+| 8 | D2 | Prototipo HTML semántico + CSS responsive (móvil/escritorio) para ≥3 pantallas principales. | | | | | |
+| 9 | D3 | README actualizado: stack, cómo ejecutar el código Java y visualizar los prototipos. | | | | | |
+| 10 | D3 | SRS con control de versiones; diagramas y modelo de datos exportados y accesibles en el repositorio. | | | | | |
+| 11 | D4 | Commits distribuidos ≥80 % del equipo; ningún integrante presente con cero commits. | | | | | |
+| 12 | D4 | Participación distribuida en la sustentación; respuestas coherentes por integrante ante preguntas dirigidas. | | | | | |
+| 13 | D5 | Al menos 2 decisiones de diseño explicadas con justificación técnica. | | | | | |
+| 14 | D5 | Accesibilidad básica en el prototipo (alt, contraste, labels); código sin bloques muertos ni duplicados. | | | | | |
 
-## Datos de la sesión
+## Resumen y decisión del jurado
 
-| Campo                         | Valor |
-| ----------------------------- | ----- |
-| Número de Ficha               |       |
-| Nombre del grupo de proyecto  |       |
-| Nombre del sistema / software |       |
-| Integrantes presentes         |       |
-| Integrantes ausentes          |       |
-| Fecha de sustentación         |       |
-| Jurado 1                      |       |
-| Jurado 2                      |       |
+| Dim | Peso | Calificación | Notas |
+|---|---|---|---|
+| D1 Gestión | 20 % | | |
+| D2 Artefactos Técnicos | 40 % | | |
+| D3 Documentación | 20 % | | |
+| D4 Trabajo en Equipo | 10 % | | |
+| D5 Calidad | 10 % | | |
 
----
+☐ **Aprobado sin condiciones** — continúa a T3  ☐ **Aprobado con condicionamientos**  ☐ **Aplazado — plan de mejora**
 
-## Escala de valoración
+**Ajuste requerido:** _____________________________  **Plazo:** __________
 
-| Símbolo | Nivel             | Descripción                                                  |
-| ------- | ----------------- | ------------------------------------------------------------ |
-| ✅      | **Excelente**     | Cumple completamente con evidencia sólida y sustentable      |
-| 🟡      | **Satisfactorio** | Cumple parcialmente o la evidencia es incompleta pero válida |
-| 🔴      | **Insuficiente**  | No cumple o la evidencia es muy débil / ausente              |
-| ➖      | **No aplica**     | El ítem no corresponde al tipo o contexto de este proyecto   |
-
----
-
-## Ponderación por dimensión
-
-| Dimensión                        | Peso |
-| -------------------------------- | ---- |
-| D1 — Gestión del Proyecto        | 20 % |
-| D2 — Artefactos Técnicos         | 40 % |
-| D3 — Documentación               | 20 % |
-| D4 — Trabajo en Equipo           | 10 % |
-| D5 — Calidad y Mejores Prácticas | 10 % |
-
----
-
-## DIMENSIÓN 1 — Gestión del Proyecto (20 %)
-
-> Esta dimensión evalúa si el equipo mantiene un proceso de trabajo organizado, colaborativo y trazable. A partir del T2 se espera que la herramienta de seguimiento ya esté en uso activo, no solo configurada.
-
-| #   | Criterio de evaluación                                                                                                                                                                                                                       | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 1.1 | El tablero de seguimiento (Jira, Trello, GitHub Projects u otro) está actualizado con las tareas del trimestre, muestra estados de avance (por hacer / en progreso / hecho) y es coherente con lo que el equipo presenta en la sustentación. |     |     |     |     |                          |
-| 1.2 | Existe al menos un **acta de reunión interna** por cada dos semanas transcurridas del trimestre, con fecha, asistentes, temas tratados y acuerdos concretos. El equipo puede mostrar estas actas durante la sustentación.                    |     |     |     |     |                          |
-| 1.3 | El equipo tiene **roles definidos y operativos** (líder, analista, diseñador de BD, frontend, backend). Cada integrante puede explicar qué hizo este trimestre en su rol y cómo aportó al avance del proyecto.                               |     |     |     |     |                          |
-| 1.4 | El equipo puede describir la **metodología de trabajo** que está usando (Scrum, Kanban u otro), cuántos sprints o iteraciones lleva y cuál fue el objetivo de cada uno en este trimestre.                                                    |     |     |     |     |                          |
-| 1.5 | Hay evidencia de **comunicación asincrónica del equipo** (canal de Slack, grupo de WhatsApp con capturas, hilo de Discord, etc.) que demuestre coordinación real fuera de las sesiones formativas.                                           |     |     |     |     |                          |
-
----
-
-## DIMENSIÓN 2 — Artefactos Técnicos (40 %)
-
-> Esta es la dimensión de mayor peso porque evalúa directamente los Resultados de Aprendizaje del trimestre. Se divide en cinco bloques correspondientes a las competencias activas.
-
-### Bloque 2A — Especificación y validación de requisitos (RA 03 y 04)
-
-| #    | Criterio de evaluación                                                                                                                                                                                                                                                                                 | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | --- | --- | --- | ------------------------ |
-| 2A.1 | Existe un **documento SRS** (Software Requirements Specification) estructurado conforme al estándar IEEE 830 o IREB, con al menos las secciones: introducción, descripción general del sistema, requisitos funcionales y no funcionales.                                                               |     |     |     |     |                          |
-| 2A.2 | Los **requisitos funcionales** están redactados en lenguaje preciso, sin ambigüedades, con identificador único (RF-001, RF-002…) y descripción de lo que el sistema debe hacer. El número mínimo esperado para T2 es 15 requisitos funcionales documentados.                                           |     |     |     |     |                          |
-| 2A.3 | Los **requisitos no funcionales** están presentes y cubren al menos tres categorías: desempeño, seguridad y usabilidad, cada uno con su identificador (RNF-001…).                                                                                                                                      |     |     |     |     |                          |
-| 2A.4 | El equipo presenta las **historias de usuario** redactadas en el formato estándar («Como [rol] quiero [acción] para [beneficio]») con criterios de aceptación verificables para cada una. El mínimo esperado es que las historias cubran al menos el 80 % de los requisitos funcionales identificados. |     |     |     |     |                          |
-| 2A.5 | Se ha aplicado al menos una **técnica de validación de requisitos** (revisión guiada, inspección, lista de chequeo interna, reunión con el cliente simulado) y existe un registro de hallazgos o acta de la sesión de validación.                                                                      |     |     |     |     |                          |
-| 2A.6 | Existe un **registro de control de cambios** del documento de requisitos: si algún requisito fue modificado, agregado o eliminado respecto al T1, el documento lo refleja con su razón y versión.                                                                                                      |     |     |     |     |                          |
-
-### Bloque 2B — Modelado de funciones del software (RA 02 de Análisis)
-
-| #    | Criterio de evaluación                                                                                                                                                                                                                                            | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 2B.1 | Existen **diagramas de casos de uso** en UML que cubren los actores del sistema y los casos de uso principales. Los diagramas usan notación estándar (actores, elipses, relaciones include/extend cuando aplica) y son coherentes con los requisitos funcionales. |     |     |     |     |                          |
-| 2B.2 | Para los casos de uso más relevantes (mínimo 3) el equipo elaboró **plantillas extendidas de casos de uso** con: nombre, actores, precondiciones, postcondiciones, flujo básico, flujos alternativos y condiciones de error.                                      |     |     |     |     |                          |
-| 2B.3 | Existe al menos un **diagrama de actividades UML** que detalla el flujo lógico de un proceso importante del sistema (registro de usuario, gestión del recurso principal, etc.).                                                                                   |     |     |     |     |                          |
-| 2B.4 | Existe un **modelo de dominio** que representa las clases conceptuales del negocio con sus atributos y relaciones, distinguiéndose claramente del diagrama de clases de diseño (no se incluyen métodos ni detalles de implementación).                            |     |     |     |     |                          |
-| 2B.5 | El equipo puede explicar en la sustentación la **trazabilidad** entre requisitos funcionales → casos de uso → modelos. Si el jurado toma un RF al azar, el equipo puede encontrar el caso de uso correspondiente.                                                 |     |     |     |     |                          |
-
-### Bloque 2C — Modelo de datos relacional (RA 02 de Construcción de BD — resultado parcial)
-
-| #    | Criterio de evaluación                                                                                                                                                                                            | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 2C.1 | Existe un **modelo entidad-relación (MER) conceptual** actualizado que refleja las entidades del dominio identificadas en T1, con sus atributos y cardinalidades.                                                 |     |     |     |     |                          |
-| 2C.2 | Existe un **modelo lógico relacional** (tablas con llaves primarias y foráneas claramente identificadas) derivado del MER conceptual. Las relaciones N:M están correctamente descompuestas en tablas intermedias. |     |     |     |     |                          |
-| 2C.3 | El modelo lógico está **normalizado hasta al menos la tercera forma normal (3FN)**. El equipo puede explicar qué ajustes hizo para alcanzar esa normalización y por qué.                                          |     |     |     |     |                          |
-| 2C.4 | Existe un **diccionario de datos preliminar** que describe las tablas más importantes: nombre de columna, tipo de dato, restricciones (NOT NULL, UNIQUE, FK) y una breve descripción del dato.                    |     |     |     |     |                          |
-
-### Bloque 2D — Programación orientada a objetos en Java
-
-| #    | Criterio de evaluación                                                                                                                                                                                                                                                                 | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 2D.1 | El equipo presenta **código Java funcional** que demuestra dominio de los cuatro pilares de POO: encapsulación (atributos privados, getters/setters), herencia (al menos una jerarquía de clases), polimorfismo (sobrescritura de métodos) y abstracción (clase abstracta o interfaz). |     |     |     |     |                          |
-| 2D.2 | Los programas Java están organizados en **paquetes** con una estructura coherente y los nombres de clases, métodos y variables siguen las convenciones de Java (CamelCase para clases, lowerCamelCase para métodos y variables).                                                       |     |     |     |     |                          |
-| 2D.3 | El código Java incluye **manejo de excepciones** (try-catch) en al menos un módulo relevante, y el equipo puede explicar por qué eligió ese punto de manejo.                                                                                                                           |     |     |     |     |                          |
-| 2D.4 | El repositorio del proyecto contiene los fuentes Java **versionados en GitHub/GitLab** con commits que muestran una evolución real del código (no un único commit masivo al final).                                                                                                    |     |     |     |     |                          |
-
-### Bloque 2E — HTML, CSS y diseño responsive
-
-| #    | Criterio de evaluación                                                                                                                                                                                   | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 2E.1 | Existe un **prototipo web** con estructura HTML semántica correcta (uso apropiado de `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) para al menos las 3 pantallas principales del sistema.      |     |     |     |     |                          |
-| 2E.2 | El prototipo aplica **CSS propio o con framework** (Tailwind, Bootstrap) con al menos: paleta de colores definida, tipografía consistente y modelo de caja correcto (padding, margin, border).           |     |     |     |     |                          |
-| 2E.3 | Las páginas del prototipo son **responsive**: se adaptan correctamente a vista móvil (< 768 px) y escritorio (> 1024 px), verificable en las DevTools del navegador o usando media queries documentadas. |     |     |     |     |                          |
-
----
-
-## DIMENSIÓN 3 — Documentación (20 %)
-
-> La documentación debe ser relevante, no decorativa. Se penaliza la documentación que infla volumen sin agregar información útil. Se valoran los documentos concisos, bien estructurados y con control de versiones visible.
-
-| #   | Criterio de evaluación                                                                                                                                                                                                                                                                                        | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 3.1 | El **repositorio en GitHub/GitLab** tiene un `README.md` actualizado que describe el proyecto, el stack tecnológico actual, cómo ejecutar el código Java y cómo visualizar los prototipos HTML. El README es legible por alguien externo al equipo.                                                           |     |     |     |     |                          |
-| 3.2 | El **SRS o documento de análisis** tiene portada con datos del equipo, tabla de contenido, control de versiones (fecha, versión, autor, descripción del cambio) y está redactado en lenguaje técnico correcto según NTC 1486 o APA en su formato de presentación.                                             |     |     |     |     |                          |
-| 3.3 | Los **diagramas UML** (casos de uso, actividades, modelo de dominio) están exportados en formato de imagen o PDF y referenciados desde el documento de análisis. No basta con mostrarlos en la presentación; deben estar en el repositorio o carpeta de documentación.                                        |     |     |     |     |                          |
-| 3.4 | El **modelo de datos** (MER conceptual + modelo lógico + diccionario de datos) está en un documento o herramienta de modelado (MySQL Workbench, pgAdmin, dbdiagram.io, Lucidchart u otra compatible con PostgreSQL, MySQL u otros motores relacionales) con el archivo fuente accesible desde el repositorio. |     |     |     |     |                          |
-| 3.5 | Los **commits del repositorio** tienen mensajes descriptivos que permiten entender qué cambió en cada uno. El jurado no debería ver commits con mensajes como "fix", "cambios", "subiendo" o similares sin contexto.                                                                                          |     |     |     |     |                          |
-
----
-
-## DIMENSIÓN 4 — Trabajo en Equipo (10 %)
-
-> Esta dimensión evalúa evidencias concretas de colaboración. La distribución de commits en GitHub es la evidencia más objetiva disponible; la sustentación oral distribuida es la segunda.
-
-| #   | Criterio de evaluación                                                                                                                                                                                                             | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 4.1 | El **historial de commits** del repositorio muestra contribuciones de al menos el 80 % de los integrantes del equipo. Ningún integrante presente debería tener cero commits en el período del trimestre.                           |     |     |     |     |                          |
-| 4.2 | Durante la sustentación, **todos los integrantes presentes participan activamente**: no es admisible que un solo integrante hable el 90 % del tiempo mientras los demás asienten.                                                  |     |     |     |     |                          |
-| 4.3 | Cuando el jurado dirige una pregunta técnica a un integrante específico, ese integrante **puede responder con coherencia** sobre el artefacto o módulo que se le pregunta, demostrando que realmente trabajó esa parte.            |     |     |     |     |                          |
-| 4.4 | El equipo demuestra **cohesión**: si hay contradicciones entre lo que dice un integrante y otro sobre decisiones técnicas del proyecto, el equipo las resuelve con argumentos técnicos, no con silencio o miradas de desconcierto. |     |     |     |     |                          |
-
----
-
-## DIMENSIÓN 5 — Calidad y Mejores Prácticas (10 %)
-
-> A partir del T2 se espera que el equipo empiece a incorporar criterios de calidad de manera consciente, no accidental.
-
-| #   | Criterio de evaluación                                                                                                                                                                                                                              | ✅  | 🟡  | 🔴  | ➖  | Observaciones del jurado |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- | --- | --- | ------------------------ |
-| 5.1 | El equipo puede explicar **al menos dos decisiones de diseño** del sistema con justificación técnica: por qué eligieron esa arquitectura de BD, ese patrón de nombrado, esa distribución de pantallas, etc.                                         |     |     |     |     |                          |
-| 5.2 | El código Java no tiene **"código muerto"** visible (clases sin usar, métodos comentados masivamente, bloques de código duplicado sin justificación).                                                                                               |     |     |     |     |                          |
-| 5.3 | Los prototipos HTML/CSS cumplen al menos las **pautas básicas de accesibilidad**: texto alternativo en imágenes (`alt`), contraste de color adecuado (verificable visualmente), y formularios con etiquetas `<label>` asociadas a sus campos.       |     |     |     |     |                          |
-| 5.4 | El equipo ha realizado una **revisión entre pares** de algún artefacto del trimestre (puede ser del SRS, de los diagramas UML o del código Java) y puede mostrar evidencia de esa revisión (comentarios en GitHub, acta, lista de chequeo interna). |     |     |     |     |                          |
-
----
-
-## Resumen de evaluación
-
-| Dimensión                        | Peso | Calificación del jurado (✅/🟡/🔴) | Notas |
-| -------------------------------- | ---- | ---------------------------------- | ----- |
-| D1 — Gestión del Proyecto        | 20 % |                                    |       |
-| D2 — Artefactos Técnicos         | 40 % |                                    |       |
-| D3 — Documentación               | 20 % |                                    |       |
-| D4 — Trabajo en Equipo           | 10 % |                                    |       |
-| D5 — Calidad y Mejores Prácticas | 10 % |                                    |       |
-
----
-
-## Decisión del jurado
-
-| Decisión                             | Seleccionar                                                                                                |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| ☐ **Aprobado sin condiciones**       | El equipo continúa al T3 con el proyecto vigente.                                                          |
-| ☐ **Aprobado con condicionamientos** | El equipo continúa pero debe resolver los ajustes indicados antes de la siguiente sesión de seguimiento.   |
-| ☐ **Aplazado — plan de mejora**      | El grupo tiene hasta [fecha] para subsanar los ítems críticos y presentar nuevamente ante el mismo jurado. |
-
-### Condicionamientos o ajustes requeridos (diligenciar si la decisión no es aprobación sin condiciones)
-
-| Artefacto / Dimensión afectada | Ajuste requerido | Fecha límite |
-| ------------------------------ | ---------------- | ------------ |
-|                                |                  |              |
-|                                |                  |              |
-
----
-
-## Retroalimentación cualitativa del jurado
-
-| Jurado   | Fortaleza principal observada en el equipo este trimestre | Oportunidad de mejora más urgente para el T3 |
-| -------- | --------------------------------------------------------- | -------------------------------------------- |
-| Jurado 1 |                                                           |                                              |
-| Jurado 2 |                                                           |                                              |
-
----
+**Retroalimentación —** Jurado 1: _____________________  Jurado 2: _____________________
 
 ## Firmas
 
-| Rol                                                    | Nombre completo | Firma |
-| ------------------------------------------------------ | --------------- | ----- |
-| Jurado 1                                               |                 |       |
-| Jurado 2                                               |                 |       |
-| Vocero del grupo (constancia de recibido del feedback) |                 |       |
+Jurado 1: _______________  Jurado 2: _______________  Vocero del grupo (constancia de recibido): _______________
 
 ---
-
-_Instrumento de evaluación formativa — Programa ADSO 228118 · Oferta Abierta · Trimestre II_  
-_Revisión: 2025 · Centro de Gestión de Mercados, Logística y Tecnologías de la Información — Regional Distrito Capital_
+*Instrumento de evaluación formativa — ADSO 228118 · Oferta Abierta · T2 · Revisión 2026 · CGMLTI — Regional Distrito Capital.*
